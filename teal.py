@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 def initialize():
     print('initializing')
-    config.command_dict = OrderedDict([('action', action),('change',change)])
+    config.command_dict = OrderedDict([('action', action),('change',change),('alter',alter)])
 
 def select_screen():
     print('Selecting screen')
@@ -15,6 +15,9 @@ def action():
 
 def change():
     print('Changing')
+
+def alter():
+    print('Altering')
 
 def get_cmd():
     print('Available commands : ', *config.command_dict.keys())
