@@ -5,13 +5,16 @@ from collections import OrderedDict
 
 def initialize():
     print('initializing')
-    config.command_dict = OrderedDict([('action', action)])
+    config.command_dict = OrderedDict([('action', action),('change':change)])
 
 def select_screen():
     print('Selecting screen')
 
 def action():
     print('Doing an action')
+
+def change():
+    print('Changing')
 
 def get_cmd():
     print('Available commands : ', *config.command_dict.keys())
