@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 def initialize():
     print('initializing')
-    config.command_dict = OrderedDict([('action', action),('change':change)])
+    config.command_dict = OrderedDict([('action', action),('change',change)])
 
 def select_screen():
     print('Selecting screen')
